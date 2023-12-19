@@ -124,7 +124,7 @@ const winscr = async () => {
   .from('userscore')
   .update({score: score, progress: 1})
   .eq('email', email)
-  localstorage.setItem("record", score);
+  localStorage.setItem("record", score);
   if(error1) console.log(error1);
 }
 
