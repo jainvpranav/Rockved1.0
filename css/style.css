@@ -53,7 +53,7 @@ body {
     right: 15%;
     transform: translate(10%, 10%);
     width: 15vw;
-    height: 30vh;
+    height: 40vh;
     text-align: center;
     color: white;
     display: flex;
@@ -65,7 +65,7 @@ body {
 }
 
 .ques {
-    font-size: 1.5rem;
+    font-size: 1.rem;
 }
 
 .answer {
