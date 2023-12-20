@@ -100,19 +100,6 @@ setTimeout(() => {
   document.getElementById("wrong").classList.remove("open");
 }, 2000);  
 }
-
-const winscr = async () => {
-  let asd = `
-              <video autoplay muted loop id="myVideo">
-                <source src="../assets/bgvid.mp4">
-              </video>
-              <h1 id="win">Mission Completed!</h1>
-            `
-  container.innerHTML = '';
-  container.innerHTML = asd;
-  upd();
-}
-
 const upd = async () => {
   let email = localStorage.getItem("email");
   const {data, error} = await supabase
@@ -130,5 +117,16 @@ const upd = async () => {
   .eq('email', email)
 
   if(error1) console.log(error1);
+}
+const winscr = async () => {
+  let asd = `
+              <video autoplay muted loop id="myVideo">
+                <source src="../assets/bgvid.mp4">
+              </video>
+              <h1 id="win">Mission Completed!</h1>
+            `
+  container.innerHTML = '';
+  container.innerHTML = asd;
+  upd();
 }
 ques();
