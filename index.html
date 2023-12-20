@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rockved 1.0</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./toast/style.css">
+</head>
+<body>
+    <ul class="notifications"></ul>
+    <div class="container" id="container">
+      <div class="toast" id="toast">
+        <p style="color: red;" class="oops" id="wrong">Oops try Again</p>
+        <p style="color: rgb(133, 247, 133);" class="correct" id="correct">Correct!</p>
+      </div>
+        <video autoplay muted loop id="myVideo">
+            <source src="./assets/bg1.mp4">
+        </video>
+        <p class="score" id="score">Score: 0</p>
+        <img src="./assets/rocket.gif" alt="Rocket_1" id="u1">
+        <div id="quiz"></div>
+    </div>
+    <script src="https://kit.fontawesome.com/59edc03056.js" crossorigin="anonymous"></script>
+    <script src="./js/index.js" type="module"></script>
+</body>
+</html>
