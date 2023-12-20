@@ -102,6 +102,7 @@ setTimeout(() => {
 }
 
 const winscr = async () => {
+  localStorage.setItem("record", "6");
   let asd = `
               <video autoplay muted loop id="myVideo">
                 <source src="../assets/bgvid.mp4">
@@ -124,7 +125,7 @@ const winscr = async () => {
   .from('userscore')
   .update({score: score, progress: 1})
   .eq('email', email)
-  localStorage.setItem("record", score);
+  
   if(error1) console.log(error1);
 }
 
